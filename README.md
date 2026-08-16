@@ -7,24 +7,24 @@ Note: scripts 01–12 form a sequential pipeline and must be run in numerical or
 
 <b>Project Structure</b>
 
-<b>Data Sources</b>
+<b>Data Sources</b><br>
 -SimHerd simulation output: gross margin (GM) per cow-year as a function of BVD, PTB, and SAL incidence, by country
 -Measure effect estimates (odds ratios) from the published literature, by disease and domain
 -Assumed baseline prevalence values, by disease and domain
 -Danish reference implementation costs, by measure
 -Country-level wage rates and GDP per capita (Canada, Denmark, Italy, United States)
 
-<b>Main Outputs</b>
--Cleaned, cost-standardized, and country-extrapolated measure and cost datasets
--Package-level risk reductions, gross-margin changes, and net benefits across 16,384 packages, three herd disease statuses, 27 disease-risk states, and three weighting schemes
--Decision-rule rankings (maximin, expected value, maximax) and Pareto-optimal package sets
--Variance decomposition of net benefit by herd disease status, package, disease-risk state, country, and weighting scheme
--Static and interactive visualizations of measure frequency, decision-rule agreement, and the Pareto frontier
+<b>Main Outputs</b><br>
+-Cleaned, cost-standardized, and country-extrapolated measure and cost datasets<br>
+-Package-level risk reductions, gross-margin changes, and net benefits across 16,384 packages, three herd disease statuses, 27 disease-risk states, and three weighting schemes<br>
+-Decision-rule rankings (maximin, expected value, maximax) and Pareto-optimal package sets<br>
+-Variance decomposition of net benefit by herd disease status, package, disease-risk state, country, and weighting scheme<br>
+-Static and interactive visualizations of measure frequency, decision-rule agreement, and the Pareto frontier<br>
 
-<b>FAIR Data Principles</b>
+<b>FAIR Data Principles</b><br>
 This repository follows the FAIR data principles to ensure that all resources are Findable, Accessible, Interoperable, and Reusable. The open-source R code is fully documented and version-controlled, and the harmonised datasets are structured to support reproducibility and integration with other tools and workflows. By aligning with FAIR standards, this project promotes transparency, encourages collaboration, and supports the broader research community in advancing economic decision analysis for livestock biosecurity.
 
-<b>Pipeline Overview</b>
+<b>Pipeline Overview</b><br>
 Data Preparation & Cost Standardization<br>
 -Converts SimHerd gross-margin output from DKK to EUR<br>
 -Extrapolates Danish reference costs to Canada, Denmark, Italy, and the United States using wage and GDP-per-capita scalars<br>
