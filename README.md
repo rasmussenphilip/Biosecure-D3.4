@@ -8,11 +8,11 @@ Note: scripts 01–12 form a sequential pipeline and must be run in numerical or
 <b>Project Structure</b>
 
 <b>Data Sources</b><br>
--SimHerd simulation output: gross margin (GM) per cow-year as a function of BVD, PTB, and SAL incidence, by country
--Measure effect estimates (odds ratios) from the published literature, by disease and domain
--Assumed baseline prevalence values, by disease and domain
--Danish reference implementation costs, by measure
--Country-level wage rates and GDP per capita (Canada, Denmark, Italy, United States)
+-SimHerd simulation output: gross margin (GM) per cow-year as a function of BVD, PTB, and SAL incidence, by country<br>
+-Measure effect estimates (odds ratios) from the published literature, by disease and domain<br>
+-Assumed baseline prevalence values, by disease and domain<br>
+-Danish reference implementation costs, by measure<br>
+-Country-level wage rates and GDP per capita (Canada, Denmark, Italy, United States)<br>
 
 <b>Main Outputs</b><br>
 -Cleaned, cost-standardized, and country-extrapolated measure and cost datasets<br>
