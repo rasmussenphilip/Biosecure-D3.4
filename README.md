@@ -27,34 +27,34 @@ This repository follows the FAIR data principles to ensure that all resources ar
 Pipeline Overview
 
 Data Preparation & Cost Standardization
-Converts SimHerd gross-margin output from DKK to EUR
-Extrapolates Danish reference costs to Canada, Denmark, Italy, and the United States using wage and GDP-per-capita scalars
-Derives low, reference, and high cost scenarios for each measure and country
+-Converts SimHerd gross-margin output from DKK to EUR
+-Extrapolates Danish reference costs to Canada, Denmark, Italy, and the United States using wage and GDP-per-capita scalars
+-Derives low, reference, and high cost scenarios for each measure and country
 Measure Effects & Risk Reduction
-Inverts risk-factor-oriented odds ratios into protective estimates
-Converts odds ratios to risk ratios and builds all 16,384 candidate packages
-Aggregates package-level risk reductions under three weighting schemes (precision, effect, joint), with a bounded cross-domain interaction between herd-level and within-herd measures
+-Inverts risk-factor-oriented odds ratios into protective estimates
+-Converts odds ratios to risk ratios and builds all 16,384 candidate packages
+-Aggregates package-level risk reductions under three weighting schemes (precision, effect, joint), with a bounded cross-domain interaction between herd-level and within-herd measures
 Economic Modeling
-Fits country-specific risk-to-gross-margin response surfaces
-Computes economic benefit by herd disease status (non-infected, infected, intermediate)
-Subtracts annualized package cost to compute net benefit for every package, country, herd status, disease-risk state, and weighting scheme
+-Fits country-specific risk-to-gross-margin response surfaces
+-Computes economic benefit by herd disease status (non-infected, infected, intermediate)
+-Subtracts annualized package cost to compute net benefit for every package, country, herd status, disease-risk state, and weighting scheme
 Decision Analysis
-Ranks packages under the maximin, expected value, and maximax decision rules
-Identifies the set of Pareto-optimal packages
+-Ranks packages under the maximin, expected value, and maximax decision rules
+-Identifies the set of Pareto-optimal packages
 Sensitivity Analysis
-Runs a one-factor variance decomposition of net benefit, both directly and on package-centred deviations
+-Runs a one-factor variance decomposition of net benefit, both directly and on package-centred deviations
 Visualization & Summary Tables
-Maps measure frequency across package size, herd disease status, and country using ggplot2
-Builds decision-rule agreement diagrams (package- and measure-level overlap)
-Produces interactive 3D Pareto-frontier and risk-surface plots
-Compiles summary tables of winning and top Pareto-optimal packages by herd status and country
-Checks the robustness of estimated net benefits (frequency of negative outcomes)
+-Maps measure frequency across package size, herd disease status, and country using ggplot2
+-Builds decision-rule agreement diagrams (package- and measure-level overlap)
+-Produces interactive 3D Pareto-frontier and risk-surface plots
+-Compiles summary tables of winning and top Pareto-optimal packages by herd status and country
+-Checks the robustness of estimated net benefits (frequency of negative outcomes)
 
 Dependencies
 
 Make sure the following R packages are installed:
 
-cowplot, dplyr, ggforce, ggplot2, grid, janitor, paletteer, patchwork, readr, readxl, stringr, tibble, and tidyr. 
+library(dplyr) library(tidyverse) library(tidyr) library(readr) library(purrr) library(stringr) library(ggplot2) library(ggVennDiagram) library(paletteer) library(patchwork) library(plotly) library(htmlwidgets) library(writexl)
 
 Author
 
