@@ -26,29 +26,29 @@ This repository follows the FAIR data principles to ensure that all resources ar
 
 Pipeline Overview
 
-Data Preparation & Cost Standardization
--Converts SimHerd gross-margin output from DKK to EUR
--Extrapolates Danish reference costs to Canada, Denmark, Italy, and the United States using wage and GDP-per-capita scalars
--Derives low, reference, and high cost scenarios for each measure and country
-Measure Effects & Risk Reduction
--Inverts risk-factor-oriented odds ratios into protective estimates
--Converts odds ratios to risk ratios and builds all 16,384 candidate packages
--Aggregates package-level risk reductions under three weighting schemes (precision, effect, joint), with a bounded cross-domain interaction between herd-level and within-herd measures
-Economic Modeling
--Fits country-specific risk-to-gross-margin response surfaces
--Computes economic benefit by herd disease status (non-infected, infected, intermediate)
--Subtracts annualized package cost to compute net benefit for every package, country, herd status, disease-risk state, and weighting scheme
-Decision Analysis
--Ranks packages under the maximin, expected value, and maximax decision rules
--Identifies the set of Pareto-optimal packages
-Sensitivity Analysis
--Runs a one-factor variance decomposition of net benefit, both directly and on package-centred deviations
-Visualization & Summary Tables
--Maps measure frequency across package size, herd disease status, and country using ggplot2
--Builds decision-rule agreement diagrams (package- and measure-level overlap)
--Produces interactive 3D Pareto-frontier and risk-surface plots
--Compiles summary tables of winning and top Pareto-optimal packages by herd status and country
--Checks the robustness of estimated net benefits (frequency of negative outcomes)
+Data Preparation & Cost Standardization<br>
+-Converts SimHerd gross-margin output from DKK to EUR<br>
+-Extrapolates Danish reference costs to Canada, Denmark, Italy, and the United States using wage and GDP-per-capita scalars<br>
+-Derives low, reference, and high cost scenarios for each measure and country<br>
+Measure Effects & Risk Reduction<br>
+-Inverts risk-factor-oriented odds ratios into protective estimates<br>
+-Converts odds ratios to risk ratios and builds all 16,384 candidate packages<br>
+-Aggregates package-level risk reductions under three weighting schemes (precision, effect, joint), with a bounded cross-domain interaction between herd-level and within-herd measures<br>
+Economic Modeling<br>
+-Fits country-specific risk-to-gross-margin response surfaces<br>
+-Computes economic benefit by herd disease status (non-infected, infected, intermediate)<br>
+-Subtracts annualized package cost to compute net benefit for every package, country, herd status, disease-risk state, and weighting scheme<br>
+Decision Analysis<br>
+-Ranks packages under the maximin, expected value, and maximax decision rules<br>
+-Identifies the set of Pareto-optimal packages<br>
+Sensitivity Analysis<br>
+-Runs a one-factor variance decomposition of net benefit, both directly and on package-centred deviations<br>
+Visualization & Summary Tables<br>
+-Maps measure frequency across package size, herd disease status, and country using ggplot2<br>
+-Builds decision-rule agreement diagrams (package- and measure-level overlap)<br>
+-Produces interactive 3D Pareto-frontier and risk-surface plots<br>
+-Compiles summary tables of winning and top Pareto-optimal packages by herd status and country<br>
+-Checks the robustness of estimated net benefits (frequency of negative outcomes)<br>
 
 Dependencies
 
@@ -58,4 +58,4 @@ library(dplyr) library(tidyverse) library(tidyr) library(readr) library(purrr) l
 
 Author
 
-This R code was developed and written by Philip Rasmussen, for estimating the net economic benefits of biosecurity adoption in dairy cattle across BVD, paratuberculosis, and salmonellosis. Developed for the Biosecure project (EU Horizon 101083923).
+This R code was developed and written by Philip Rasmussen for estimating the net economic benefits of biosecurity adoption in dairy cattle across BVD, paratuberculosis, and salmonellosis. Developed for the Biosecure project (EU Horizon 101083923).
