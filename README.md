@@ -5,26 +5,26 @@ This repository contains the full R-based pipeline for estimating the net econom
 
 Note: scripts 01–12 form a sequential pipeline and must be run in numerical order, each reading from the exports/ folder populated by the previous step. Scripts prefixed 99_ are independent utilities that can be run at any point after the main pipeline to generate specific summary tables or plots.
 
-<b>Project Structure<\b>
+<b>Project Structure</b>
 
-<b>Data Sources<\b>
+<b>Data Sources</b>
 -SimHerd simulation output: gross margin (GM) per cow-year as a function of BVD, PTB, and SAL incidence, by country
 -Measure effect estimates (odds ratios) from the published literature, by disease and domain
 -Assumed baseline prevalence values, by disease and domain
 -Danish reference implementation costs, by measure
 -Country-level wage rates and GDP per capita (Canada, Denmark, Italy, United States)
 
-<b>Main Outputs<\b>
+<b>Main Outputs</b>
 -Cleaned, cost-standardized, and country-extrapolated measure and cost datasets
 -Package-level risk reductions, gross-margin changes, and net benefits across 16,384 packages, three herd disease statuses, 27 disease-risk states, and three weighting schemes
 -Decision-rule rankings (maximin, expected value, maximax) and Pareto-optimal package sets
 -Variance decomposition of net benefit by herd disease status, package, disease-risk state, country, and weighting scheme
 -Static and interactive visualizations of measure frequency, decision-rule agreement, and the Pareto frontier
 
-<b>FAIR Data Principles<\b>
+<b>FAIR Data Principles</b>
 This repository follows the FAIR data principles to ensure that all resources are Findable, Accessible, Interoperable, and Reusable. The open-source R code is fully documented and version-controlled, and the harmonised datasets are structured to support reproducibility and integration with other tools and workflows. By aligning with FAIR standards, this project promotes transparency, encourages collaboration, and supports the broader research community in advancing economic decision analysis for livestock biosecurity.
 
-<b>Pipeline Overview<\b>
+<b>Pipeline Overview</b>
 Data Preparation & Cost Standardization<br>
 -Converts SimHerd gross-margin output from DKK to EUR<br>
 -Extrapolates Danish reference costs to Canada, Denmark, Italy, and the United States using wage and GDP-per-capita scalars<br>
@@ -49,12 +49,12 @@ Visualization & Summary Tables<br>
 -Compiles summary tables of winning and top Pareto-optimal packages by herd status and country<br>
 -Checks the robustness of estimated net benefits (frequency of negative outcomes)<br>
 
-<b>Dependencies<\b>
+<b>Dependencies</b>
 
 Make sure the following R packages are installed:
 
 library(dplyr) library(tidyverse) library(tidyr) library(readr) library(purrr) library(stringr) library(ggplot2) library(ggVennDiagram) library(paletteer) library(patchwork) library(plotly) library(htmlwidgets) library(writexl)
 
-<b>Author<\b>
+<b>Author</b>
 
 This R code was developed and written by Philip Rasmussen for estimating the net economic benefits of biosecurity adoption in dairy cattle across BVD, paratuberculosis, and salmonellosis. Developed for the Biosecure project (EU Horizon 101083923).
