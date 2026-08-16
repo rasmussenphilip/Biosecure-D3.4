@@ -1,4 +1,4 @@
-<b>BIOSECURE PROJECT – Deliverable 3.4<br>
+<b>BIOSECURE PROJECT<br>DELIVERABLE 3.4<br>
 PARTIAL BUDGETING-BASED COST-BENEFIT ANALYSIS OF BIOSECURITY MEASURES</b><br>
 
 This repository contains the full R-based pipeline for estimating the net economic benefits of biosecurity adoption in dairy herds across bovine viral diarrhoea (BVD), paratuberculosis (PTB), and salmonellosis (SAL). It integrates published measure-effect estimates, the results of a stochastic dairy herd simulation model (SimHerd), and country-specific cost data to rank 16,384 biosecurity packages under three decision rules and identify Pareto-optimal combinations across herd disease statuses and countries.
